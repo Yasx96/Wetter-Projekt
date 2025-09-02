@@ -9,9 +9,9 @@ function ApiCall({ onApiResponse }) {
 
         const response = {
             query: inputValue,
+            //Hier kann die API-Response um die Werte erweitert werden, die wir brauchen
         };
 
-        // Nach oben geben
         onApiResponse(response);
     };
 
@@ -26,7 +26,7 @@ function ApiCall({ onApiResponse }) {
                     type="text"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
-                    placeholder="Suche..."
+                    placeholder="Such deine Stadt"
                 />
                 <button type="submit">Suchen</button>
             </form>
