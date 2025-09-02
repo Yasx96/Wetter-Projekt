@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:142.0) Gecko/20100101 Firefox/142.0" version="28.1.2">
+  <diagram name="Seite-1" id="VMP9uu8uAadB5DPsi1at">
+    <mxGraphModel dx="1373" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="680" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-2" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="90" y="50" width="660" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="180" width="660" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;header&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="640" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-8" value="div" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="110" width="620" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-10" value="h1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="115" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="120" width="570" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="190" width="640" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-13" value="div" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-20" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="110" y="290" width="620" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="300" width="440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-23" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;input&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="305" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-24" value="&lt;div&gt;search&lt;/div&gt;&lt;div&gt;button&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="220" width="620" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-26" value="Keine Ahnung, was du mit deiner Freizeit anfangen sollst? Check das Wetter und hol&#39; dir jetzt Ideen!" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="230" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-28" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="760" width="680" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-29" value="&lt;div&gt;footer&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="770" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-30" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="410" width="660" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-34" value="div" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-35" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="440" width="290" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-36" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="340" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-37" value="&lt;div align=&quot;left&quot;&gt;In Barcelona scheint heute die Sonne bei 31 Grad. Pack deine Sachen und genieß den Strand!&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="415" y="690" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-38" value="&lt;div align=&quot;left&quot;&gt;Weatherly holt dich aus deiner Wohnung. Ob ein Besuch der Prager &lt;br/&gt;Altstadt bei Sonnenschein oder eine Führung durch Hamburgs Dungeon bei &lt;br/&gt;Regen - wir finden für jedes Wetter deine Aktivität.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="450" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-41" value="image" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="530" width="270" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="YpNYZTxtfYRbB2CzaBgo-42" value="image" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="450" width="320" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
