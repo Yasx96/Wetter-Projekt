@@ -2,7 +2,7 @@
 import "./Header.css";
 
 function Header() {
-    return <header className="header">Wetter App</header>;
+    return <header className="header">Weatherly</header>;
 }
 
 export default Header;

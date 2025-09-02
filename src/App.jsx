@@ -2,17 +2,13 @@ import { useState } from "react";
 import "./App.css";
 
 import Header from "./Header/Header";
-import SearchForm from "./Main/SearchForm/SearchForm.jsx";
-import ResultBox from "./Main/ResultBox/ResultBox.jsx";
+import ApiCall from "./Main/ApiCall/ApiCall.jsx";
+import ApiResponse from "./Main/ApiResponse/ApiResponse.jsx";
+import Suggestion from "./Main/Suggestion/Suggestion.jsx";
+import CompanyVision from "./Main/CompanyVision/CompanyVision.jsx";
 
 function App() {
-    const [inputValue, setInputValue] = useState("");
-    const [searchQuery, setSearchQuery] = useState("");
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setSearchQuery(inputValue);
-    };
+    const [apiResponse, setApiResponse] = useState(null);
 
     return (
         <div className="app">
@@ -21,15 +17,17 @@ function App() {
 
             {/* Inhalt */}
             <main className="main">
-               <div className="search-div">
-                   <SearchForm
-                       inputValue={inputValue}
-                       setInputValue={setInputValue}
-                       handleSubmit={handleSubmit}
-                   />
-               </div>
-                <div className="result-div">
-                    <ResultBox searchQuery={searchQuery} />
+                <ApiCall onApiResponse={setApiResponse} />
+
+                <ApiResponse apiResponse={apiResponse} />
+
+                <div className="suggestions-div">
+                    <div className="suggestion-child">
+                        <CompanyVision />
+                    </div>
+                    <div className="suggestion-child">
+                        <Suggestion />
+                    </div>
                 </div>
             </main>
         </div>
