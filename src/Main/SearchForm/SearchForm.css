@@ -1,0 +1,36 @@
+.search-form {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #357ab7;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+}

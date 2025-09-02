@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+
+import Header from "./Header/Header";
+import SearchForm from "./Main/SearchForm/SearchForm.jsx";
+import ResultBox from "./Main/ResultBox/ResultBox.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [inputValue, setInputValue] = useState("");
+    const [searchQuery, setSearchQuery] = useState("");
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Wetter-App-Projekt</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Wir können jetzt Dinge tun
-      </p>
-    </>
-  )
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setSearchQuery(inputValue);
+    };
+
+    return (
+        <div className="app">
+            {/* Header */}
+            <Header />
+
+            {/* Inhalt */}
+            <main className="main">
+               <div className="search-div">
+                   <SearchForm
+                       inputValue={inputValue}
+                       setInputValue={setInputValue}
+                       handleSubmit={handleSubmit}
+                   />
+               </div>
+                <div className="result-div">
+                    <ResultBox searchQuery={searchQuery} />
+                </div>
+            </main>
+        </div>
+    );
 }
 
-export default App
+export default App;
