@@ -50,13 +50,42 @@ const wetterStringMapping = {
     "Moderate or heavy snow with thunder": "Gewitter"
 };
 
-function getWetterZustandFromString(str) {
-    return wetterStringMapping[str] || "Error";
-}
+export function getWetterZustandFromString(str) {
+    // 1️⃣ Extrahiere den Text: str kann entweder String oder {text: string} sein
+    let input = "";
+    if (!str) {
+        console.warn("Ungültiger Input für getWetterZustandFromString:", str);
+        return "Error";
+    } else if (typeof str === "string") {
+        input = str;
+    } else if (typeof str === "object" && str.text) {
+        input = str.text;
+    } else {
+        console.warn("Ungültiger Input für getWetterZustandFromString:", str);
+        return "Error";
+    }
 
-// Beispiele
-console.log(getWetterZustandFromString("Sunny"));                  // Sonnig
-console.log(getWetterZustandFromString("Heavy snow"));             // Schnee
-console.log(getWetterZustandFromString("Patchy light rain"));      // Regen
-console.log(getWetterZustandFromString("Thundery outbreaks possible")); // Gewitter
-console.log(getWetterZustandFromString("Fog"));                    // Nebel
+    console.log("Input vom API-Condition-Objekt/String:", input);
+
+    // 2️⃣ Bereinigen: trim + alles lowercase + multiple spaces zu einem einzelnen Space
+    const cleanedStr = input
+        .toString()
+        .trim()
+        .replace(/\s+/g, " ")
+        .toLowerCase();
+
+    console.log("Bereinigter Input:", cleanedStr);
+
+    // 3️⃣ Key im Mapping suchen (case-insensitive)
+    const key = Object.keys(wetterStringMapping).find(k =>
+        k.toString().trim().replace(/\s+/g, " ").toLowerCase() === cleanedStr
+    );
+
+    console.log("Gefundener Mapping-Key:", key);
+
+    // 4️⃣ Wert aus Mapping zurückgeben, sonst Error
+    const result = key ? wetterStringMapping[key] : "Error";
+    console.log("Deutscher Wetterzustand:", result);
+
+    return result;
+}

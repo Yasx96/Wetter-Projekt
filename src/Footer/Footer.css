@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: normal;
+    color: black;
+    padding: 1rem 1.5rem;
+    background-color: #024950;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 9rem;
+}

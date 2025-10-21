@@ -34,6 +34,7 @@ function ApiResponse({ apiResponse }) {
                         <p>Gefühlt: {apiResponse.feelslike}°C</p>
                         <p>Luftfeuchtigkeit: {apiResponse.humidity}%</p>
                         <p>Wind: {apiResponse.wind} km/h</p>
+                        <p>Was machen? {apiResponse.activity}</p>
                     </div>
                 </div>
             </div>
