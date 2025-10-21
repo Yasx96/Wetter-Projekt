@@ -1,4 +1,4 @@
-// aktivitaeten.js
+import {getWetterZustandFromString} from "./WeatherDataMapping.js";
 
 class Aktivitaeten {
     constructor() {
@@ -126,19 +126,29 @@ class Aktivitaeten {
                 name: "Kreativ sein (Malen, Musik, Schreiben)",
                 wetter: ["Sonnig", "Bewölkt", "Nebel", "Regen", "Schnee", "Gewitter"],
                 temperatur: { min: -20, max: 40 }
-            }
-        ];
+            }];
     }
 
-    // Alle passenden Aktivitäten finden
     findeAktivitaet(wetter, grad) {
-        return this.liste.filter(a =>
-            a.wetter.includes(wetter) &&
-            grad >= a.temperatur.min &&
-            grad <= a.temperatur.max
-        );
+        const wetterDeutsch = getWetterZustandFromString(wetter);
+        console.log("Condition Deutsch: " + wetterDeutsch);
+
+        const passende = this.liste.filter(a => {
+            const matchWetter = a.wetter.includes(wetterDeutsch);
+            const matchTemp = grad >= a.temperatur.min && grad <= a.temperatur.max;
+            return matchWetter && matchTemp;
+        });
+
+        console.log("Gefundene passende Aktivitäten:", passende);
+
+        // Wenn keine gefunden, null zurückgeben
+        if (passende.length === 0) return null;
+
+        // Zufällige Auswahl
+        const randomIndex = Math.floor(Math.random() * passende.length);
+        console.log("Random Auswahl:", passende[randomIndex]);
+        return passende[randomIndex];
     }
 }
 
-// eslint-disable-next-line no-undef
-module.exports = Aktivitaeten;
+export default new Aktivitaeten();
