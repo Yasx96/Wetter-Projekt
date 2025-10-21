@@ -7,15 +7,18 @@
     flex-direction: row;
     gap: 0.5rem;
     flex: 1;
+    position: relative; /* Referenz für absolute Position der Liste */
 }
 
 .search-form input {
-    flex: 1;
-    padding: 0.5rem;
+    flex: 2;              /* größerer Anteil im Flex-Container */
+    padding: 0.5rem 0.75rem;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 .search-form button {
+    flex: 0 0 auto;       /* feste Größe, Button bleibt gleich */
     padding: 0.5rem 1rem;
     font-size: 1rem;
     background-color: #4a90e2;
@@ -28,6 +31,33 @@
     background-color: #357ab7;
 }
 
+/* Vorschläge Dropdown */
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    position: absolute;
+    top: calc(100% + 0.25rem); /* knapp unter Input */
+    left: 0;
+    width: calc(100% - 0.5rem); /* passt genau zum Input */
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.suggestions-list li {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #eee;
+}
+
 /* Mobile */
 @media (max-width: 480px) {
     .search-form {
@@ -36,5 +66,9 @@
 
     .search-form button {
         width: 100%;
+    }
+
+    .suggestions-list {
+        width: 100%; /* passt sich Input an */
     }
 }
