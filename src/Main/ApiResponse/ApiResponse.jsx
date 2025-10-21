@@ -2,22 +2,40 @@ import "./ApiResponse.css";
 
 function ApiResponse({ apiResponse }) {
     if (!apiResponse) {
-        return null; // Nichts anzeigen, wenn leer
+        return null;
+    }
+
+    if (apiResponse.error) {
+        return (
+            <div className="api-response error">
+                <p>Fehler: {apiResponse.error}</p>
+                <p>Bitte überprüfe die Eingabe und versuche es erneut.</p>
+            </div>
+        );
     }
 
     return (
         <div className="api-response">
             <div className="result-box">
-                <h3>Ergebnisse für: {apiResponse.location}</h3>
-                <p>
-                    <strong>Temperatur:</strong> {apiResponse.temperatur}°C
-                </p>
-                <p>
-                    <strong>Wetterlage:</strong> {apiResponse.wetter}
-                </p>
-                <p>
-                    <strong>Luftfeuchtigkeit:</strong> {apiResponse.luftfeuchtigkeit}%
-                </p>
+                <h2>
+                    Wetter in {apiResponse.city}, {apiResponse.country}
+                </h2>
+
+                <div className="weather-info">
+                    <img
+                        src={apiResponse.icon}
+                        alt={apiResponse.condition}
+                        className="weather-icon"
+                    />
+
+                    <div className="weather-details">
+                        <p className="temperature">Temperatur: {apiResponse.temperature}°C</p>
+                        <p>{apiResponse.condition}</p>
+                        <p>Gefühlt: {apiResponse.feelslike}°C</p>
+                        <p>Luftfeuchtigkeit: {apiResponse.humidity}%</p>
+                        <p>Wind: {apiResponse.wind} km/h</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
