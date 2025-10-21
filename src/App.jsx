@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
-import Header from "./Header/Header";
+import Header from "./Header/Header.jsx";
+import Footer from "./Footer/Footer.jsx"
 import ApiCall from "./Main/ApiCall/ApiCall.jsx";
 import ApiResponse from "./Main/ApiResponse/ApiResponse.jsx";
 import Suggestion from "./Main/Suggestion/Suggestion.jsx";
@@ -30,6 +31,8 @@ function App() {
                     </div>
                 </div>
             </main>
+
+            <Footer />
         </div>
     );
 }

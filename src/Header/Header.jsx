@@ -1,6 +1,6 @@
 // Header.jsx
 import "./Header.css";
-import logo from "../assets/Weatherly_App.png"; // Pfad zum PNG
+import logo from "../assets/Weatherly_App.png"; //
 
 function Header() {
     return (
