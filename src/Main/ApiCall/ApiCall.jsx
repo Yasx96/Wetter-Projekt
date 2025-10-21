@@ -105,7 +105,7 @@ function ApiCall({ onApiResponse }) {
                         </ul>
                     )}
                 </div>
-                <button type="submit">Suchen</button>
+                <button className="submit-btn" type="submit">Suchen</button>
             </form>
         </div>
     );

@@ -15,20 +15,22 @@
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
     box-sizing: border-box;
+    background-color: transparent;
+    color: #1a1a1a;
 }
 
 .search-form button {
     flex: 0 0 auto;       /* feste Größe, Button bleibt gleich */
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #4a90e2;
+    background-color: #024950;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .search-form button:hover {
-    background-color: #357ab7;
+    background-color: #213547;
 }
 
 /* Vorschläge Dropdown */
