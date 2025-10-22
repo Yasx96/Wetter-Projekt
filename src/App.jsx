@@ -24,10 +24,10 @@ function App() {
 
                 <div className="suggestions-div">
                     <div className="suggestion-child">
-                        <CompanyVision />
+                        <Suggestion />
                     </div>
                     <div className="suggestion-child">
-                        <Suggestion />
+                        <CompanyVision />
                     </div>
                 </div>
             </main>

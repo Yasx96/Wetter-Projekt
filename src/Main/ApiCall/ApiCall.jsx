@@ -57,7 +57,8 @@ function ApiCall({ onApiResponse }) {
                 feelslike: data.current.feelslike_c,
                 humidity: data.current.humidity,
                 wind: data.current.wind_kph,
-                activity: passendeAktivitaeten.beschreibung
+                activity: passendeAktivitaeten.beschreibung,
+                bildUrl: passendeAktivitaeten.bildUrl
             };
 
             onApiResponse(weatherData);
