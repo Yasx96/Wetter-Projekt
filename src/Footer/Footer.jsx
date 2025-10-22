@@ -3,7 +3,8 @@ import "./Footer.css";
 function Footer() {
     return (
         <footer className="footer">
-            <p>Hier kommt das Impressum hin.</p>
+            <p>© 2025 Weatherly – Schulprojekt, kein echtes Produkt.</p>
+            <p>Erstellt zu Lernzwecken mit WeatherAPI.</p>
         </footer>
     );
 }
