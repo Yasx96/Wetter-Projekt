@@ -28,6 +28,7 @@ function Suggestion() {
                     erfolgreich: true,
                     temperature: data.current.temp_c,
                     condition: conditionDe,
+                    bildUrl: passendeAktivitaeten.bildUrl,
                     activity: passendeAktivitaeten
                         ? passendeAktivitaeten.beschreibungPerfekt
                         : "Keine passende Aktivität gefunden."
@@ -38,7 +39,8 @@ function Suggestion() {
                     erfolgreich: false,
                     temperature: null,
                     condition: null,
-                    activity: null
+                    activity: null,
+                    bildUrl: "https://cdn.pixabay.com/photo/2016/04/16/23/07/cat-1333926_960_720.jpg"
                 });
             }
         };
@@ -71,9 +73,8 @@ function Suggestion() {
 
     return (
         <div className="suggestion">
-            <img
-                className="couple-image"
-                src="https://cdn.pixabay.com/photo/2017/08/01/20/52/happy-holidays-2567915_960_720.jpg"
+            <img className="couple-image"
+                src={weatherData.bildUrl}
                 alt="suggestion-frankfurt"
             />
             <p>

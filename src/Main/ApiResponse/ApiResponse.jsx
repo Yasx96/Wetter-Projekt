@@ -42,6 +42,10 @@ function ApiResponse({ apiResponse }) {
                     <div className="weather-right-side">
                         <div className="activity-details">
                             <p>{apiResponse.activity}</p>
+                            <img className="couple-image"
+                                 src={apiResponse.bildUrl}
+                                 alt="suggestion-picture"
+                            />
                         </div>
                     </div>
                 </div>
