@@ -41,10 +41,20 @@ function ApiCall({ onApiResponse }) {
 
             const data = await res.json();
 
-            const passendeAktivitaeten = aktivitaeten.findeAktivitaet(
+            console.log("API-Daten: " + data);
+
+            let passendeAktivitaeten = aktivitaeten.findeAktivitaet(
                 data.current.condition.text,
                 data.current.temp_c
             );
+
+            if (!passendeAktivitaeten) {
+                passendeAktivitaeten = {
+                    beschreibung: "Wir konnten leider keine Aktivitätsdaten mit deiner Eingabe verknüpfen.",
+                    bildUrl: "https://cdn.pixabay.com/photo/2016/04/16/23/07/cat-1333926_960_720.jpg"
+                };
+            }
+
 
             const conditionDe = getWetterZustandFromString(data.current.condition.text);
 
